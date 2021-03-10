@@ -1,4 +1,6 @@
 import React from "react";
+import moment from "moment";
+import * as uuid from 'uuid';
 
 const blockStyles = {
     "--rows": 13,
@@ -27,11 +29,18 @@ const componentStyles = {
 };
 
 function Block() {
+    // this is here just to bloat up the bundle
+    moment.now();
+    uuid.v4();
+
     return (
         <section className="block" style={blockStyles}>
             <div className="background" />
             <div className="block-grid">
-                <div className="block-grid-item use-m-margin grid__item" style={componentStyles}>
+                <div
+                    className="block-grid-item use-m-margin grid__item"
+                    style={componentStyles}
+                >
                     <div className="text-box block-grid-item__component">
                         <p className="h-3">
                             <span>Text</span>
