@@ -22,6 +22,7 @@ module.exports = {
     },
   },
   plugins: [
+    `gatsby-plugin-image`,
     {
       resolve: `gatsby-plugin-gatsby-cloud`,
       options: {
@@ -41,6 +42,13 @@ module.exports = {
       options: {
         name: "assets",
         path: `${__dirname}/static/`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "images",
+        path: path.join(__dirname, `src`, `images`),
       },
     },
     {
