@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby"
+import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import BackgroundImage from "gatsby-background-image";
 import { graphql, useStaticQuery } from "gatsby";
@@ -78,10 +78,7 @@ function Block() {
 
     return (
         <section className="block" style={blockStyles}>
-            <div
-                className="background"
-                style={{ backgroundImage: "url('../../images/5.JPG')" }}
-            />
+            <div className="background" />
 
             <BackgroundImage
                 Tag="div"
@@ -95,7 +92,8 @@ function Block() {
                 >
                     <div className="text-box block-grid-item__component">
                         <p className="h-3">
-                            <span>Text block</span> <Link to="/about">about link</Link>.
+                            <span>Text block</span>{" "}
+                            <Link to="/about">about link</Link>.
                         </p>
                     </div>
                 </div>
