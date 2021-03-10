@@ -2111,12 +2111,6 @@ html#ecwid_html body#ecwid_body .block-ecwid-store .ecwid-productBrowser {
         text-align: var(--m-text, var(--text));
     }
 }
-.block-grid-item {
-    pointer-events: none;
-}
-.block-grid-item__component {
-    pointer-events: all;
-}
 @media screen and (max-width: 920px) {
     .block-grid-item {
         width: var(--m-width, 100%);
@@ -2134,11 +2128,12 @@ html#ecwid_html body#ecwid_body .block-ecwid-store .ecwid-productBrowser {
     display: grid;
     grid-area: 1/1/-1/-1;
     grid-template-rows: repeat(var(--rows), var(--row-size));
-    grid-template-columns: calc(
-            (var(--container-width) - var(--content-width)) / 2
-        ) 1fr repeat(var(--column-count), minmax(0, var(--column-width))) 1fr calc(
-            (var(--container-width) - var(--content-width)) / 2
-        );
+    grid-template-columns:
+        calc((var(--container-width) - var(--content-width)) / 2)
+        1fr repeat(
+            var(--column-count),
+            minmax(0, var(--column-width))
+        ) 1fr calc((var(--container-width) - var(--content-width)) / 2);
     grid-auto-rows: var(--row-size);
     row-gap: var(--row-gap);
     column-gap: var(--column-gap);
