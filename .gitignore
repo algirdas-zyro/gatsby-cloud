@@ -53,10 +53,10 @@ public/
 .cache/
 
 # Gatsby context
-.gatsby-context.js
+# .gatsby-context.js
 
 # Bundle stats
-bundle-stats.json
+# bundle-stats.json
 
 # macOS
 .DS_Store

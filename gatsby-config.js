@@ -22,6 +22,35 @@ module.exports = {
     },
   },
   plugins: [
+    'gatsby-plugin-bundle-stats',
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Work Sans\:400`,
+          `Montserrat\:400,700`,
+          `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
+        ],
+        display: 'swap'
+      }
+    },
+    // {
+    //   resolve: `gatsby-plugin-google-fonts-v2`,
+    //   options: {
+    //     fonts: [
+    //       {
+    //         family: 'Work Sans',
+    //         variable: true,
+    //         weights: 400
+    //       },
+    //       {
+    //         family: 'Montserrat',
+    //         variable: true,
+    //         weights: [400, 700]
+    //       }
+    //     ]
+    //   }
+    // },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-plugin-gatsby-cloud`,
