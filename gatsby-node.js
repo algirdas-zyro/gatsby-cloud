@@ -103,7 +103,8 @@ exports.createPages = async ({ graphql, actions }) => {
 
     [...Array(pageCount)].forEach((_val, pageNum) => {
       createPage({
-        path: pageNum === 0 ? `/` : `/${pageNum + 1}/`,
+        // path: pageNum === 0 ? `/` : `/${pageNum + 1}/`,
+        path: `/${pageNum + 1}/`,
         component: listingPage,
         context: {
           limit: postsPerPage,
@@ -113,13 +114,12 @@ exports.createPages = async ({ graphql, actions }) => {
         },
       });
     });
-  } else {
-    // Load the landing page instead
-    createPage({
-      path: `/`,
-      component: landingPage,
-    });
   }
+  // Load the landing page instead
+  createPage({
+    path: `/`,
+    component: landingPage,
+  });
 
   // Post page creating
   postsEdges.forEach((edge, index) => {
