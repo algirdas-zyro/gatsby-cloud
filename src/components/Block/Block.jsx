@@ -94,7 +94,7 @@ function Block() {
                 >
                     <div className="text-box block-grid-item__component">
                         <p className="h-3">
-                            <span>Updated text</span>
+                            <span>Text block</span>
                         </p>
                     </div>
                 </div>
