@@ -43,6 +43,12 @@
     "uuid": "^8.3.2"
   },
   "devDependencies": {
+    "@fab/actions": "^1.0.0-rc.9",
+    "@fab/cli": "^1.0.0-rc.9",
+    "@fab/input-static": "^1.0.0-rc.9",
+    "@fab/plugin-render-html": "^1.0.0-rc.9",
+    "@fab/plugin-rewire-assets": "^1.0.0-rc.9",
+    "@fab/server": "^1.0.0-rc.9.p1",
     "babel-preset-gatsby": "^1.0.0",
     "cli-glob": "^0.1.0",
     "eslint": "^7.21.0",
@@ -79,6 +85,9 @@
     "build": "gatsby build",
     "build:pp": "gatsby build --prefix-paths",
     "build:gh": "npm run clean && npm run build:pp && gh-pages -d public",
+    "build:fab": "npm run build && npm run fab:build",
+    "fab:build": "fab build",
+    "fab:serve": "fab serve fab.zip",
     "clean": "rm -rf public && rm -rf .cache",
     "lint:js": "eslint --ext .js,.jsx .",
     "lint:styles": "stylelint src/**/*.css",
