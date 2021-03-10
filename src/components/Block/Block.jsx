@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image";
 import BackgroundImage from "gatsby-background-image";
 import { graphql, useStaticQuery } from "gatsby";
@@ -94,7 +95,7 @@ function Block() {
                 >
                     <div className="text-box block-grid-item__component">
                         <p className="h-3">
-                            <span>Text block</span>
+                            <span>Text block</span> <Link to="/about">about link</Link>.
                         </p>
                     </div>
                 </div>
