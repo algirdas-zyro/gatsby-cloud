@@ -10,6 +10,7 @@ function Landing() {
     <Layout>
       <Helmet title={config.siteTitle} />
       <SEO />
+      <Nav/>
       <Block/>
     </Layout>
   );
