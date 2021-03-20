@@ -101,31 +101,56 @@ function Block() {
                     className="block-grid-item use-m-margin grid__item"
                     style={image1Styles}
                 >
-                    <StaticImage src="../../images/1.JPG" alt="alt" />
+                    <StaticImage
+                        src="../../images/1.JPG"
+                        width={294}
+                        height={196}
+                        alt="alt"
+                    />
                 </div>
                 <div
                     className="block-grid-item use-m-margin grid__item"
                     style={image2Styles}
                 >
-                    <StaticImage src="../../images/2.JPG" alt="alt" />
+                    <StaticImage
+                        src="../../images/2.JPG"
+                        alt="alt"
+                        width={294}
+                        height={196}
+                    />
                 </div>
                 <div
                     className="block-grid-item use-m-margin grid__item"
                     style={image3Styles}
                 >
-                    <StaticImage src="../../images/3.JPG" alt="alt" />
+                    <StaticImage
+                        src="../../images/3.JPG"
+                        width={604}
+                        height={402}
+                        alt="alt"
+                    />
                 </div>
                 <div
                     className="block-grid-item use-m-margin grid__item"
                     style={image4Styles}
                 >
-                    <StaticImage src="../../images/4.JPG" alt="alt" />
+                    <StaticImage
+                        src="../../images/4.JPG"
+                        width={500}
+                        height={334}
+                        alt="alt"
+                    />
                 </div>
                 <div
                     className="block-grid-item use-m-margin grid__item"
                     style={image5Styles}
                 >
-                    <StaticImage src="../../images/5.JPG" alt="alt" />
+                    <StaticImage
+                        src="../../images/5.JPG"
+                        width={1224}
+                        height={816}
+                        alt="alt"
+                    />
                 </div>
             </div>
         </section>
