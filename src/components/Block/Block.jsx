@@ -8,13 +8,13 @@ import * as uuid from "uuid";
 
 const blockStyles = {
     "--rows": 16,
-    "--width": "1180px",
+    "--width": "1224px",
     "--m-rows": "9",
     "--row-gap": "16px",
     "--row-size": "64px",
     "--attachment": "unset",
     "--column-gap": "16px",
-    "--grid-width": "1180px",
+    "--grid-width": "1224px",
     "--column-count": "12",
     "--block-padding": "10px 0 10px 0",
     "--content-width": "1600px",
