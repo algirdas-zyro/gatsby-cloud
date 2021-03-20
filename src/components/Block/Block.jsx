@@ -125,8 +125,8 @@ function Block() {
                 >
                     <StaticImage
                         src="../../images/3.JPG"
-                        width={604}
-                        height={402}
+                        width={500}
+                        height={334}
                         alt="alt"
                     />
                 </div>
@@ -136,8 +136,8 @@ function Block() {
                 >
                     <StaticImage
                         src="../../images/4.JPG"
-                        width={500}
-                        height={334}
+                        width={604}
+                        height={402}
                         alt="alt"
                     />
                 </div>
